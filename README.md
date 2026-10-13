@@ -1,6 +1,6 @@
 # PAnDora: psychological state and expression modeling
 
-This artifact contains PAnDora's deterministic modeling core: psychological state updates, subjective appraisal, attribution, content planning, and linguistic expression planning. The functions are extracted from the implementation with their bodies preserved; experiment runners, model-provider integrations, datasets, participant records, local configuration, and repository history are excluded.
+This artifact contains source-grounded preprocessing and PAnDora's deterministic modeling core: psychological state updates, subjective appraisal, attribution, content planning, and linguistic expression planning. The functions are extracted from the implementation with their bodies preserved; experiment runners, model-provider integrations, datasets, participant records, local configuration, and repository history are excluded.
 
 ## Run a synthetic example
 
@@ -75,4 +75,8 @@ After the bounded update, `client/expression_planning.py` constructs subjective 
 - `pandora/client/expression_planning.py`: appraisal, attribution, and content planning.
 - `pandora/client_simulation/{response_act_layer,linguistic_layer,expression_planning_module}.py`: response acts and situated expression planning.
 
-Only modeling definitions and a synthetic local example are distributed. No original case content, identifying project metadata, credentials, or Git history is included.
+Only preprocessing/modeling code and invented local examples are distributed. No original case content, identifying project metadata, credentials, or Git history is included.
+
+## Dialogue preprocessing and distillation
+
+The complete extraction package now includes source dialogue normalization, case-info materialization, the client-grounded memory extraction prompt and validation, client expression-statistics distillation, and therapist strategy distillation. See `PREPROCESSING.md` for the inputs, outputs, preserved source logic, and model-adapter interface. Run `python preprocessing_demo.py` after extracting the archive for a complete synthetic wiring check. No source case data or provider credentials are distributed.
