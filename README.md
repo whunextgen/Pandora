@@ -1,5 +1,7 @@
 # PAnDora: psychological state and expression modeling
 
+**Project website:** [PANDORA research story](https://whunextgen.github.io/Pandora/) · English / 中文
+
 This artifact contains source-grounded preprocessing and PAnDora's deterministic modeling core: psychological state updates, subjective appraisal, attribution, content planning, and linguistic expression planning. The functions are extracted from the implementation with their bodies preserved; experiment runners, model-provider integrations, datasets, participant records, local configuration, and repository history are excluded.
 
 ## Run a synthetic example
